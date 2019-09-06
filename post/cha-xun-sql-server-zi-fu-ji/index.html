@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>查询SQL Server字符集 | Andy&#39;s Blog</title>
+<meta name="description" content="三省吾身" />
+<link rel="shortcut icon" href="https://azltt.github.io/favicon.ico?v=1567731716499">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://azltt.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://azltt.github.io">
+  <img class="avatar" src="https://azltt.github.io/images/avatar.png?v=1567731716499" alt="">
+  </a>
+  <h1 class="site-title">
+    Andy&#39;s Blog
+  </h1>
+  <p class="site-description">
+    三省吾身
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/azltt" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              查询SQL Server字符集
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-09-05
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://uploadbeta.com/api/pictures/random" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <ul>
+<li>1<br>
+SELECT COLLATIONPROPERTY('Chinese_PRC_Stroke_CI_AI_KS_WS', 'CodePage')<br>
+下面是查询结果：<br>
+936 简体中文GBK<br>
+950 繁体中文BIG5<br>
+437 美国/加拿大英语<br>
+932 日文<br>
+949 韩文<br>
+866 俄文<br>
+65001 unicode UFT-8</li>
+<li>2<br>
+use master<br>
+select SERVERPROPERTY(N'edition') as Edition --数据版本，如企业版、开发版等<br>
+,SERVERPROPERTY(N'collation') as Collation --数据库字符集<br>
+,@@VERSION as Version --数据库版本号<br>
+,@@LANGUAGE AS Language --数据库使用的语言，如us_english等<br>
+,SERVERPROPERTY(N'servername') as ServerName --服务名</li>
+<li>33<br>
+SELECT a.NAME AS 表名,b.NAME AS 列名,a.COLLATION FROM syscolumns a,sysobjects b<br>
+WHERE a.id=b.id  and b.NAME='tcr0021'  ORDER BY 3 desc</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://azltt.github.io/post/shiro-zhu-jie">
+              <h3 class="post-title">
+                shiro注解
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'db1e62ad869653d932d8',
+    clientSecret: '50f37b2b9364d8f92d6eba7067274efff87774e1',
+    repo: 'azltt.github.io',
+    owner: 'azltt',
+    admin: ['azltt'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/azltt/azltt.github.io" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://azltt.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
