@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>查询SQL Server字符集 | Andy&#39;s Blog</title>
+<title>centos7无法链接wifi | Andy&#39;s Blog</title>
 <meta name="description" content="三省吾身" />
 <link rel="shortcut icon" href="https://azltt.github.io/favicon.ico?v=1567934250006">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -77,11 +77,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              查询SQL Server字符集
+              centos7无法链接wifi
             </h2>
             <div class="post-info">
               <span>
-                2019-09-05
+                2019-09-08
               </span>
               <span>
                 1 min read
@@ -89,36 +89,23 @@
               
             </div>
             
-              <img class="post-feature-image" src="https://uploadbeta.com/api/pictures/random" alt="">
-            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <ul>
-<li>1<br>
-SELECT COLLATIONPROPERTY('Chinese_PRC_Stroke_CI_AI_KS_WS', 'CodePage')<br>
-下面是查询结果：<br>
-936 简体中文GBK<br>
-950 繁体中文BIG5<br>
-437 美国/加拿大英语<br>
-932 日文<br>
-949 韩文<br>
-866 俄文<br>
-65001 unicode UFT-8</li>
-<li>2<br>
-use master<br>
-select SERVERPROPERTY(N'edition') as Edition --数据版本，如企业版、开发版等<br>
-,SERVERPROPERTY(N'collation') as Collation --数据库字符集<br>
-,@@VERSION as Version --数据库版本号<br>
-,@@LANGUAGE AS Language --数据库使用的语言，如us_english等<br>
-,SERVERPROPERTY(N'servername') as ServerName --服务名</li>
-<li>333<br>
-SELECT a.NAME AS 表名,b.NAME AS 列名,a.COLLATION FROM syscolumns a,sysobjects b<br>
-WHERE a.id=b.id  and b.NAME='tcr0021'  ORDER BY 3 desc</li>
-</ul>
+                <p>centos7无法链接wifi</p>
+<p>输入以下代码：</p>
+<h1 id="rfkill-unblock-all">rfkill unblock all</h1>
+<h1 id="rfkill-list">rfkill list</h1>
+<h1 id="modprobe-r-ideapad_laptop">modprobe -r ideapad_laptop</h1>
+<p>这样就解决 NO WIFI adapter found.</p>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li><a href="#rfkill-unblock-all">rfkill unblock all</a></li>
+<li><a href="#rfkill-list">rfkill list</a></li>
+<li><a href="#modprobe-r-ideapad_laptop">modprobe -r ideapad_laptop</a></li>
+</ul>
+
               </div>
             </div>
           </article>
@@ -127,9 +114,9 @@ WHERE a.id=b.id  and b.NAME='tcr0021'  ORDER BY 3 desc</li>
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://azltt.github.io/post/shiro-zhu-jie">
+            <a href="https://azltt.github.io/post/windows-ming-ling">
               <h3 class="post-title">
-                shiro注解
+                Windows命令+
               </h3>
             </a>
           </div>
