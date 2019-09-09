@@ -7,9 +7,10 @@
 <meta name="description" content="三省吾身">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://azltt.github.io/favicon.ico?v=1568012842142">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://azltt.github.io/favicon.ico?v=1568012570124">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://azltt.github.io/styles/main.css">
 
@@ -20,58 +21,119 @@
 
   
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://azltt.github.io">
-        <img src="https://azltt.github.io/images/avatar.png?v=1568012570124" class="site-logo">
-        <h1 class="site-title">Andy&#39;s Blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://azltt.github.io">Andy&#39;s Blog</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
         
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
         
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
+      </ul>
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>Windows命令+</h1>
+            <p class="article-meta">
+              2019-09-06
+              
+            </p>
+            
+              <img src="https://bing.ioliu.cn/v1/rand" alt="Windows命令+">
+            
+            <div class="post-content">
+              <p>强制删除文件及文件夹命令</p>
+<!-- more -->
+<p>删除文件或目录CMD命令：<br>
+rd/s/q 盘符:\某个文件夹  （强制删除文件文件夹和文件夹内所有文件）<br>
+del/f/s/q 盘符:\文件名  （强制删除文件，文件名必须加文件后缀名）</p>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji">
+                <h3 class="post-title">
+                  查询SQL Server字符集
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://azltt.github.io/images/avatar.png?v=1568012842142" class="no-responsive avatar">
+    <div class="text-muted">三省吾身</div>
     <div class="social-container">
       
         
@@ -85,57 +147,75 @@
         
       
     </div>
-    <div class="site-description">
-      三省吾身
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
     </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/azltt/azltt.github.io" target="_blank">Gridea</a> | <a class="rss" href="https://azltt.github.io/atom.xml" target="_blank">RSS</a>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://azltt.github.io/post/centos7-wu-fa-lian-jie-wifi">centos7无法链接wifi</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://azltt.github.io/post/windows-ming-ling">Windows命令+</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji">查询SQL Server字符集</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://azltt.github.io/post/shiro-zhu-jie">shiro注解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://azltt.github.io/post/sui-ji-huo-qu-tu-pian-jie-kou">随机获取图片接口</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://azltt.github.io/post/hello-gridea">Hello Gridea</a>
+            </li>
+          
+        
+      </ul>
     </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://azltt.github.io/tag/iY4aEB-l7" class="badge secondary">
+          shiro
+        </a>
+      
+        <a href="https://azltt.github.io/tag/mlJfn8ECl" class="badge warning">
+          Gridea
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/azltt/azltt.github.io" target="_blank">Gridea</a> | <a class="rss" href="https://azltt.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">Windows命令+</h2>
-            <div class="post-date">2019-09-06</div>
-            
-              <div class="feature-container" style="background-image: url('https://bing.ioliu.cn/v1/rand')">
-              </div>
-            
-            <div class="post-content">
-              <p>强制删除文件及文件夹命令</p>
-<!-- more -->
-<p>删除文件或目录CMD命令：<br>
-rd/s/q 盘符:\某个文件夹  （强制删除文件文件夹和文件夹内所有文件）<br>
-del/f/s/q 盘符:\文件名  （强制删除文件，文件名必须加文件后缀名）</p>
-
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji">
-                  <h3 class="post-title">
-                    查询SQL Server字符集
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
-        </div>
-      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -145,13 +225,6 @@ del/f/s/q 盘符:\文件名  （强制删除文件，文件名必须加文件后
 AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
