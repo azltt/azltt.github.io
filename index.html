@@ -1,454 +1,414 @@
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
-<title>Andy&#39;s Blog</title>
-<link rel="shortcut icon" href="https://azltt.github.io/favicon.ico?v=1568123843492">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://azltt.github.io/styles/main.css" type='text/css' media='all'>
-
+<title>
+    Andy&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://azltt.github.io/favicon.ico?v=1568216915602">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://azltt.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://azltt.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 
+</head>
 
-
-  </head>
-  <body class="home blog ct-body standard">
-    <div id="overflow-container" class="overflow-container">
-    <a class="skip-content" href="#main">Skip to content</a>
-        <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://azltt.github.io/tag/9_Z4_ck5h">随笔</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://azltt.github.io/tag/iY4aEB-l7">shiro</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://azltt.github.io/tag/mlJfn8ECl">Gridea</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://azltt.github.io">
+                <img class="avatar" src="https://azltt.github.io/images/avatar.png?v=1568216915602" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    Andy&#39;s Blog
+                </h1>
             </div>
-            <ul class="social-media-icons">
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
                 
                     
-                        <li>
-                            <a href="https://github.com/azltt" data-animate-hover="pulse" class="github" target="_blank">
-                                <i class="fab fa-github" title="github"></i>
-                                <span class="screen-reader-text">github</span>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
                     
-                
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
                     
-                
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
                     
-                
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
                     
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
+                            <li>
+                                <a href="/post/tools" class="menu">
+                                    工具
+                                </a>
+                            </li>
+                            
+                                
             </ul>
         </div>
     </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://azltt.github.io">  Andy&#39;s Blog </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">三省吾身</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/tools">工具</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-</header>
-
-
-        <div id="main" class="main" role="main">
-  <h1 class="screen-reader-text">Posts</h1>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard   has-post-thumbnail hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <a class="featured-image-link" href="https://azltt.github.io/post/xin-qing-sui-bi">
-        <div class='featured-image lazy lazy-bg-image' data-background="https://source.unsplash.com/1600x900/?book"></div>
-      </a>
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-09-10 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-                <span> / </span>
-                <span class="category">
-                        <a href="https://azltt.github.io/tag/9_Z4_ck5h">随笔</a>
-                </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/xin-qing-sui-bi"> 心情随笔 </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-09-08 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/centos7-wu-fa-lian-jie-wifi"> centos7无法链接wifi </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard   has-post-thumbnail hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <a class="featured-image-link" href="https://azltt.github.io/post/windows-ming-ling">
-        <div class='featured-image lazy lazy-bg-image' data-background="https://bing.ioliu.cn/v1/rand"></div>
-      </a>
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-09-06 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/windows-ming-ling"> Windows命令+ </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p>强制删除文件及文件夹命令</p>
-
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard   has-post-thumbnail hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <a class="featured-image-link" href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji">
-        <div class='featured-image lazy lazy-bg-image' data-background="https://uploadbeta.com/api/pictures/random"></div>
-      </a>
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-09-05 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji"> 查询SQL Server字符集 </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard   has-post-thumbnail hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <a class="featured-image-link" href="https://azltt.github.io/post/shiro-zhu-jie">
-        <div class='featured-image lazy lazy-bg-image' data-background="https://source.unsplash.com/1600x900/?like"></div>
-      </a>
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-09-04 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-                <span> / </span>
-                <span class="category">
-                        <a href="https://azltt.github.io/tag/iY4aEB-l7">shiro</a>
-                </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/shiro-zhu-jie"> shiro注解 </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p>记录一些有关shiro的注解：</p>
-
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard   has-post-thumbnail hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <a class="featured-image-link" href="https://azltt.github.io/post/sui-ji-huo-qu-tu-pian-jie-kou">
-        <div class='featured-image lazy lazy-bg-image' data-background="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
-      </a>
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2018-12-21 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/sui-ji-huo-qu-tu-pian-jie-kou"> 随机获取图片接口 </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard   has-post-thumbnail hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <a class="featured-image-link" href="https://azltt.github.io/post/hello-gridea">
-        <div class='featured-image lazy lazy-bg-image' data-background="https://azltt.github.io/post-images/hello-gridea.png"></div>
-      </a>
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2018-12-12 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://azltt.github.io" title="Posts by  Andy&#39;s Blog" rel="author"> Andy&#39;s Blog</a>
-          </span>
-            
-                <span> / </span>
-                <span class="category">
-                        <a href="https://azltt.github.io/tag/mlJfn8ECl">Gridea</a>
-                </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://azltt.github.io/post/hello-gridea"> Hello Gridea </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
 </div>
 
-        <nav class="navigation pagination" role="navigation">
-    <h2 class="screen-reader-text">Posts navigation</h2>
-    <div class="nav-links">
-        
-        
-    </div>
-</nav>
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-        <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://azltt.github.io"> Andy&#39;s Blog </a>
-    </h1>
-    <p class="site-description">三省吾身</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/xin-qing-sui-bi">
+                        心情随笔
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-09-10</time>
+                    
+                        <a href="https://azltt.github.io/tag/9_Z4_ck5h" class="post-tag i-tag
+                            i-tag-info">
+            #随笔
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://azltt.github.io/post/xin-qing-sui-bi" class="post-feature-image" style="background-image:url(https://source.unsplash.com/1600x900/?book) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            
+昨晚心情确实不太好，想了很久，感觉说起话来不能太嗨，言多必失啊。
+有时候说的话不是这个意思，但是就能被误解。我也不知道该怎么办。只能双方生气。😂。还是心理不成熟。希望自己多看点书，多多关心身边的人。多多成长吧！！！😝
+说起来容易，做起来感觉还是很难。尽力吧。！！！
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/xin-qing-sui-bi">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/centos7-wu-fa-lian-jie-wifi">
+                        centos7无法链接wifi
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-09-08</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            centos7无法链接wifi
+输入以下代码：
+rfkill unblock all
+rfkill list
+modprobe -r ideapad_laptop
+这样就解决 NO WIFI adapter found.
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/centos7-wu-fa-lian-jie-wifi">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/windows-ming-ling">
+                        Windows命令+
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-09-06</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://azltt.github.io/post/windows-ming-ling" class="post-feature-image" style="background-image:url(https://bing.ioliu.cn/v1/rand) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>强制删除文件及文件夹命令</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/windows-ming-ling">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji">
+                        查询SQL Server字符集
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-09-05</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji" class="post-feature-image" style="background-image:url(https://uploadbeta.com/api/pictures/random) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            
+1
+SELECT COLLATIONPROPERTY(&#39;Chinese_PRC_Stroke_CI_AI_KS_WS&#39;, &#39;CodePage&#39;)
+下面是查询结果：
+936 简体中文GBK
+950 繁体中文BIG5
+437 美国/加拿大英语
+932 日文
+949 韩文
+866 俄文
+65001 unicode UFT-8
+2
+use master
+select SERVERPROPERTY(N&#39;edition&#39;) as Edition --数据版本，如企业版、开发版等
+,SERVERPROPERTY(N&#39;collation&#39;) as Collation --数据库字符集
+,@@VERSION as Version --数据库版本号
+,@@LANGUAGE AS Language --数据库使用的语言，如us_english等
+,SERVERPROPERTY(N&#39;servername&#39;) as ServerName --服务名
+333
+SELECT a.NAME AS 表名,b.NAME AS 列名,a.COLLATION FROM syscolumns a,sysobjects b
+WHERE a.id=b.id  and b.NAME=&#39;tcr0021&#39;  ORDER BY 3 desc
+
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/cha-xun-sql-server-zi-fu-ji">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/shiro-zhu-jie">
+                        shiro注解
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-09-04</time>
+                    
+                        <a href="https://azltt.github.io/tag/iY4aEB-l7" class="post-tag i-tag
+                            i-tag-banana">
+            #shiro
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://azltt.github.io/post/shiro-zhu-jie" class="post-feature-image" style="background-image:url(https://source.unsplash.com/1600x900/?like) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>记录一些有关shiro的注解：</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/shiro-zhu-jie">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/sui-ji-huo-qu-tu-pian-jie-kou">
+                        随机获取图片接口
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2018-12-21</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://azltt.github.io/post/sui-ji-huo-qu-tu-pian-jie-kou" class="post-feature-image" style="background-image:url(https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            https://source.unsplash.com/1600x900/?like
+http://lorempixel.com/1600/900
+https://bing.ioliu.cn/v1/rand 【有时候不清楚】
+https://unsplash.it/1600/900?random（国内加载略慢）
+https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture【返回必应图片】
+https://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E【随机美女图片】
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/sui-ji-huo-qu-tu-pian-jie-kou">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://azltt.github.io/post/hello-gridea">
+                        Hello Gridea
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2018-12-12</time>
+                    
+                        <a href="https://azltt.github.io/tag/mlJfn8ECl" class="post-tag i-tag
+                            i-tag-other_3">
+            #Gridea
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://azltt.github.io/post/hello-gridea" class="post-feature-image" style="background-image:url(https://azltt.github.io/post-images/hello-gridea.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://azltt.github.io/post/hello-gridea">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://azltt.github.io/images/avatar.png?v=1568216915602)">
+        </div>
+        <h1 class="id_card-title">
+            Andy&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
+            三省吾身
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/azltt" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
         </div>
     </div>
-    <ul class="social-media-icons">
-        
-            
-                <li>
-                    <a href="https://github.com/azltt" data-animate-hover="pulse" class="github" target="_blank">
-                        <i class="fab fa-github" title="github"></i>
-                        <span class="screen-reader-text">github</span>
-                    </a>
-                </li>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p>Powered by <a href="https://github.com/azltt/azltt.github.io" target="_blank">Gridea-blog</a></p>
+    
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            哈哈哈哈哈
+        </div>
     </div>
-</footer>
+    
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/azltt/azltt.github.io" target="_blank">Gridea-blog</a> | 
+  <a class="rss" href="https://azltt.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
 <script>
-    hljs.initHighlightingOnLoad()
+  hljs.initHighlightingOnLoad()
 </script>
-<script src="https://azltt.github.io/media/scripts/lib/jquery.min.js"></script>
-<script src="https://azltt.github.io/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://azltt.github.io/media/scripts/lib/production.min.js"></script>
 
-      </div>
-  </body>
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
 </html>
-
