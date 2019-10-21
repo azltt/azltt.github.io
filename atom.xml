@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://azltt.github.io</id>
     <title>Andy&apos;s Blog</title>
-    <updated>2019-09-12T07:22:20.732Z</updated>
+    <updated>2019-10-21T02:28:28.025Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://azltt.github.io"/>
     <link rel="self" href="https://azltt.github.io/atom.xml"/>
@@ -10,17 +10,6 @@
     <logo>https://azltt.github.io/images/avatar.png</logo>
     <icon>https://azltt.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Andy&apos;s Blog</rights>
-    <entry>
-        <title type="html"><![CDATA[心情随笔]]></title>
-        <id>https://azltt.github.io/post/xin-qing-sui-bi</id>
-        <link href="https://azltt.github.io/post/xin-qing-sui-bi">
-        </link>
-        <updated>2019-09-10T01:58:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>心情💘💘💘💘</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>心情💘💘💘💘</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[centos7无法链接wifi]]></title>
         <id>https://azltt.github.io/post/centos7-wu-fa-lian-jie-wifi</id>
